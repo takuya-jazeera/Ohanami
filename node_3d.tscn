@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://udkcpcclslht"]
+
+[ext_resource type="Script" path="res://node_3d.gd" id="1_2lsf7"]
+[ext_resource type="Script" path="res://Scripts/MeshInstance3D.gd" id="1_u40o0"]
+[ext_resource type="PackedScene" uid="uid://784smrb1sx6" path="res://Scripts/mouse_2.tscn" id="3_uhc1a"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_qhox0"]
+size = Vector2(5, 4)
+subdivide_width = 20
+subdivide_depth = 20
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_2lsf7")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.3453)
+light_energy = 0.515
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.57285, 0, 3.49782, 0, 5, 0, -3.49782, 0, 3.57285, 0, -1.78297, -0.166782)
+mesh = SubResource("QuadMesh_qhox0")
+script = ExtResource("1_u40o0")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.831654, -0.268627, 0.485995, 0, 0.875203, 0.483756, -0.555294, -0.402318, 0.727866, 1.0178, -0.296703, 2.06637)
+
+[node name="mouse2" parent="." instance=ExtResource("3_uhc1a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.59999, 0)
