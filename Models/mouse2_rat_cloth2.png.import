@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6yp46to45e7o"
-path.s3tc="res://.godot/imported/mouse2_rat_cloth2.png-8e44ff461d7940795447c0fe61a25683.s3tc.ctex"
+uid="uid://be8loxgo0uoer"
+path.s3tc="res://.godot/imported/mouse2_rat_cloth2.png-b22b54913ea58f0fa8de65e30b38dab4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://mouse2_rat_cloth2.png"
-dest_files=["res://.godot/imported/mouse2_rat_cloth2.png-8e44ff461d7940795447c0fe61a25683.s3tc.ctex"]
+source_file="res://Models/mouse2_rat_cloth2.png"
+dest_files=["res://.godot/imported/mouse2_rat_cloth2.png-b22b54913ea58f0fa8de65e30b38dab4.s3tc.ctex"]
 
 [params]
 

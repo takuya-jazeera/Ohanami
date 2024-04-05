@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://heyl6l0s7ewu"]
+
+[ext_resource type="Shader" path="res://Shaders/Character.gdshader" id="1_nioes"]
+[ext_resource type="Texture2D" uid="uid://b0jpxb5a5x7e2" path="res://Models/mouse2_ratface.png" id="2_qd5y8"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_nioes")
+shader_parameter/tex = ExtResource("2_qd5y8")

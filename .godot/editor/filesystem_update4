@@ -4,3 +4,13 @@ res://shd.gdshader
 res://blossom.tscn
 res://Scripts/mouse_2.tscn
 res://node_3d.gd
+res://Scenes/node_3d.tscn
+res://Shaders/blossom.gdshader
+res://Scenes/blossom.tscn
+res://Scripts/node_3d.gd
+res://Scripts/MeshInstance3D.gd
+res://Shaders/Character.gdshader
+res://Materials/Mouse2.tres
+res://Materials/Kirikabu.tres
+res://Materials/Mouse3.tres
+res://Materials/Mouse1.tres

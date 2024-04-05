@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://b4ecr0esmcsri"]
+
+[ext_resource type="Shader" path="res://Shaders/Character.gdshader" id="1_214tk"]
+[ext_resource type="Texture2D" uid="uid://bjc1t86xcruvu" path="res://Models/mouse2_rat_cloth.png" id="2_qsw8d"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_214tk")
+shader_parameter/tex = ExtResource("2_qsw8d")

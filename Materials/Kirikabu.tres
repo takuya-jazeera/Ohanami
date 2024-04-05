@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://dagaqcykk21jg"]
+
+[ext_resource type="Shader" path="res://Shaders/Character.gdshader" id="1_xlkq7"]
+[ext_resource type="Texture2D" uid="uid://dimag8qjo820x" path="res://Models/mouse2_Stump.png" id="2_pxrip"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_xlkq7")
+shader_parameter/tex = ExtResource("2_pxrip")

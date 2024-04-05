@@ -13,6 +13,7 @@ var tick = 0.0
 var tock = 0
 
 var phi = PI 
+var psi = PI
 
 var game_state = STATES.stStatic
 var mouse_previous_position = Vector2(0.0,0.0)
@@ -21,7 +22,7 @@ var mouse_current_position
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
-	var proto = preload("res://blossom.tscn")
+	var proto = preload("res://Scenes/blossom.tscn")
 	for i in 1000: 
 		var part = proto.instantiate()
 		add_child(part)
@@ -46,6 +47,7 @@ func _process(delta):
 		STATES.stStatic :
 			pass
 		STATES.stRotating :
+			# 
 			if Vector2(1.0,0.0).dot(d) < 0 :
 				phi -= 0.05
 			elif  Vector2(1.0,0.0).dot(d) > 0 :
@@ -53,7 +55,17 @@ func _process(delta):
 			else :
 				pass
 				
-	$mouse2.quaternion = Quaternion(0.0,cos(phi * 0.5),0.0,sin(phi * 0.5))
+			if Vector2(0.0,1.0).dot(d) > 0 :
+				psi = clamp(psi + 0.05,-PI * 0.1 + PI,PI * 0.1 + PI)
+			elif Vector2(0.0,1.0).dot(d) < 0 :
+				psi = clamp(psi - 0.05,-PI * 0.1 + PI ,PI * 0.1 + PI)
+			else :
+				pass		
+			# psi = psi + PI * 0.5
+	
+	var p = Quaternion(0.0,cos(phi * 0.5),0.0,sin(phi * 0.5))
+	var q = Quaternion(cos(psi*0.5) ,0.0,0.0,sin(psi*0.5))
+	$mouse2.quaternion = p  * q
 	
 	mouse_previous_position = mouse_current_position
 	

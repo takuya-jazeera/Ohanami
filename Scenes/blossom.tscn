@@ -1,18 +1,18 @@
 [gd_scene load_steps=6 format=3 uid="uid://d2m16iowlmxtf"]
 
-[ext_resource type="Script" path="res://Scripts/blossom.gd" id="1_64epq"]
-[ext_resource type="Shader" path="res://blossom.gdshader" id="1_ycbte"]
-[ext_resource type="Texture2D" uid="uid://drxrvxo8lj155" path="res://blossom.png" id="3_dmt3y"]
+[ext_resource type="Script" path="res://Scripts/blossom.gd" id="1_i8451"]
+[ext_resource type="Shader" path="res://Shaders/blossom.gdshader" id="2_orrbi"]
+[ext_resource type="Texture2D" uid="uid://drxrvxo8lj155" path="res://Textures/blossom.png" id="3_vc6po"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_aeirg"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dtbp3"]
 render_priority = 0
-shader = ExtResource("1_ycbte")
-shader_parameter/tex = ExtResource("3_dmt3y")
+shader = ExtResource("2_orrbi")
+shader_parameter/tex = ExtResource("3_vc6po")
 
 [node name="Node3D" type="Node3D"]
-script = ExtResource("1_64epq")
+script = ExtResource("1_i8451")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)

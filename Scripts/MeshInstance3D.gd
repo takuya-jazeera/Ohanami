@@ -10,8 +10,8 @@ var blossoms = []
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	my_mat = preload("res://shd.tres")	
-	tex = preload("res://icon.svg")
-	tex2 = preload("res://cherry.jpg")
+	tex = preload("res://Textures/icon.svg")
+	tex2 = preload("res://Textures/cherry.jpg")
 	my_mat.set_shader_parameter("tex",tex)
 	my_mat.set_shader_parameter("tex2",tex2)		
 
